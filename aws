@@ -1,0 +1,25 @@
+HOW TO PUSH FILES TO GITHUB:
+To push multiple branches at a time :
+git push -u origin branch1 branch2 branch3
+To push all branches at a time :
+git push -u origin --all
+To know what are the repo that we connected to github :
+git remote -v
+To pull the commits from github :
+git pull origin branch_name
+GIT PULL = GIT FETCH + GIT MERGE
+fetch : check the changes from central
+if changes are present then we will merge to local
+merge : getting the chages from github
+To fetch the changes from github :
+git fetch origin branch_name
+To merge the commits from github :
+git merge origin/branch_name
+commit some fi les in local
+Now link github repo to local system :
+git remote add origin github-repo-url
+Now push the source code to github :
+git push -u origin branch_name
+Then it will ask username : provider github username
+Now it will ask password : generate a token and paste here
+How to generate a token : setting >>>>> developer settings >>> personal access token >> generate a token >>> name : token name >>> scopes : repositories
